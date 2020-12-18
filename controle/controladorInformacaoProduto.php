@@ -3,7 +3,7 @@
 
 <h1><i class='info'></i>Informação Produto</h1>
 <?php
-require_once 'modelo/dao/classeProdutoDAO.php';
+require_once 'modelo/DAO/classeProdutoDAO.php';
 $pdt = $_GET['pdt'];
 
 $produto = new classeProdutoDAO();
