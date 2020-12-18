@@ -19,7 +19,7 @@ abstract class conexao {
     public static function getInstance() {
         //conexao com banco de dados
         try {
-            $pdo = new PDO("mysql:host=localhost; dbname=brecho_na_rede;", "root", "");
+            $pdo = new PDO("mysql:host=us-cdbr-east-02.cleardb.com; dbname=heroku_f1d70e32715567e;", "bf575b78ebf4a1", "bba8ba0f");
             $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $pdo;
         } catch (PDOException $erro) {
